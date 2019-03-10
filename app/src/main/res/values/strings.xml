@@ -5,4 +5,7 @@
     <string name="login_input_password">Password</string>
     <string name="login_button_sigin">Entrar</string>
     <string name="login_button_clear">Limpar</string>
+    <string name="login_error_password_length">A senha precisa ter pelo menos 6 letras</string>
+    <string name="login_error_username_empty">Por favor informe um email</string>
+    <string name="login_error_username_invalid">Por favor informe um endereço de email valido</string>
 </resources>
