@@ -8,55 +8,55 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:context=".LoginActivity"
-            android:padding="25dp"
+            android:padding="@dimen/main_padding"
             android:orientation="vertical"
             android:gravity="center">
 
         <ImageView
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/main_logo"
-                android:layout_width="150dp"
-                android:layout_height="150dp"/>
+                android:layout_width="@dimen/logo_square_size"
+                android:layout_height="@dimen/logo_square_size"/>
 
         <TextView
-                android:textSize="13pt"
-                android:layout_marginVertical="10dp"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_marginVertical="@dimen/login_title_margin_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Login"/>
+                android:text="@string/login_title"/>
 
         <EditText
                 android:inputType="textEmailAddress"
-                android:hint="Login"
-                android:layout_marginVertical="10dp"
+                android:hint="@string/login_input_username"
+                android:layout_marginVertical="@dimen/login_input_margin_vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
         <EditText
                 android:inputType="textPassword"
-                android:hint="Password"
-                android:layout_marginVertical="10dp"
+                android:hint="@string/login_input_password"
+                android:layout_marginVertical="@dimen/login_input_margin_vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
-        <RelativeLayout
-                android:layout_marginTop="30dp"
+        <LinearLayout
+                android:layout_marginTop="@dimen/login_buttons_margin_top"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content">
 
             <Button
                     style="@style/Widget.AppCompat.Button.Colored"
-                    android:layout_width="150dp"
-                    android:layout_height="60dp"
-                    android:text="Entrar"
-                    android:layout_alignParentLeft="true"/>
+                    android:layout_width="@dimen/login_buttons_width"
+                    android:layout_height="@dimen/login_buttons_height"
+                    android:text="@string/login_button_sigin"
+                    android:layout_weight="1"/>
             <Button
-                    android:layout_width="150dp"
-                    android:layout_height="60dp"
-                    android:text="Limpar"
-                    android:layout_alignParentRight="true"/>
+                    android:layout_width="@dimen/login_buttons_width"
+                    android:layout_height="@dimen/login_buttons_height"
+                    android:text="@string/login_button_clear"
+                    android:layout_weight="1"/>
 
-        </RelativeLayout>
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>
