@@ -1,5 +1,6 @@
 package com.example.atividade1
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
@@ -15,8 +16,10 @@ class LoginActivity : AppCompatActivity() {
             clearFields()
         }
         btn_signin.setOnClickListener {
-            validateLoginField()
-            validatePasswordField()
+            if (validateLoginField() && validatePasswordField()) {
+                val intent = Intent(this, MainMenuActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
 
