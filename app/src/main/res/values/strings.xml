@@ -8,4 +8,7 @@
     <string name="login_error_password_length">A senha precisa ter pelo menos 6 letras</string>
     <string name="login_error_username_empty">Por favor informe um email</string>
     <string name="login_error_username_invalid">Por favor informe um endereço de email valido</string>
+    <string name="menu_button_edit_desc">Editar Descrição</string>
+    <string name="menu_button_edit_info">Editar Informações</string>
+    <string name="menu_button_signout">Sair</string>
 </resources>
